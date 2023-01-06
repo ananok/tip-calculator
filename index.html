@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <div class="logo-div">
+      <img src="./images/logo.svg" alt="logo" class="logo" />
+    </div>
+   
+    <div class="wrapper">
+      <div class="calculator">
+        <h3 class="bill">Bill</h3>
+        <div class="bill-input">
+          <img class="dolar" src="./images/icon-dollar.svg" alt="icon-dolar" />
+          <input type="number" min="0"  name="bill" id="bill" placeholder="0.0" />
+        </div>
+        <h3 class="select-tip">Select Tip %</h3>
+        <div class="buttons">
+          <button class="first-btn btn">5%</button>
+          <button class="second-btn btn">10%</button>
+          <button class="third-btn btn">15%</button>
+          <button class="fourth-btn btn">25%</button>
+          <button class="fifth-btn btn">50%</button>
+          <input type="number" min="0" name="custom" id="custom" placeholder="Custom" />
+        </div>
+      </div>
+      <div class="people">
+        <h3 id="label-ppl">Number of People</h3>
+        <p id="error"></p>
+        <div class="input-div">
+          <img class="person" src="./images/icon-person.svg" alt="person" />
+          <input type="number" min="0" step="1" name="people" id="people" placeholder="0" /> 
+        </div>
+      </div>
+         
+      <div class="result">
+        <div class="tip-calculated">
+          <h3 class="tip-result">
+            Tip Amount <span class="person-span"> / person</span>
+          </h3>
+          <h2 class="tip"></h2>
+        </div>
+        <div class="total-calculated">
+          <h3 class="total-result">
+            Total <span class="person-span2"> / person</span>
+          </h3>
+          <h2 class="total"></h2>
+        </div>
+        <button class="reset">Reset</button>
+      </div>
+    </div>
+    <script type="text/javascript" src="./script.js"></script>
+  </body>
+</html>
